@@ -1,0 +1,14 @@
+{
+  "name": "react-stu",
+  "version": "1.0.0",
+  "description": "react学习",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "郑开心",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}
