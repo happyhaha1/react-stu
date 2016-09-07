@@ -4,7 +4,7 @@
  */
 import React from "react";
 import ReactDOM, { render } from "react-dom";
-import style from "../css/index.css";
+import style from "../css/common/common.css";
 import bg from "../img/bg.jpg";
 import bg2 from "../img/bg2.jpg";
 
@@ -23,7 +23,7 @@ class Hello extends React.Component {
         return (
             <div className="MyComponent-wrapper">
                 <h1>Hello world</h1>
-                <img className={style.photo} onClick={this.click} src={bg}/>
+                <img className="happy" onClick={this.click} src={bg}/>
             </div>
         );
     }
