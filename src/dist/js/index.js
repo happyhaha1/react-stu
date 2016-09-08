@@ -6,8 +6,9 @@ import React from "react";
 import ReactDOM, { render } from "react-dom";
 import style from "../css/common/common.css";
 import bg from "../img/bg.jpg";
-import bg2 from "../img/bg2.jpg";
+import Data from "../data/data.json";
 
+import 'whatwg-fetch'
 import { DatePicker, message } from 'antd';
 class Hello extends React.Component {
     constructor(props) {
@@ -15,13 +16,20 @@ class Hello extends React.Component {
     }
 
     click() {
-        $("."+style.photo).attr("src",bg2);
-        console.log(style.photo);
+        // const srcDir = path.resolve(process.cwd(),'src');
+        //
+        // var dir = fs.readdirSync(srcDir);
+        // console.log(dir);
+        fetch(Data)
+            .then((res) => { console.log(res.status);return res.json() })
+            .then((data) => { console.log(data) })
+            .catch((e) => { console.log(e.message) })
+
     }
 
     render() {
         return (
-            <div className="MyComponent-wrapper">
+            <div className={style.photo}>
                 <h1>Hello world</h1>
                 <img className="happy" onClick={this.click} src={bg}/>
             </div>
@@ -37,7 +45,7 @@ class App extends React.Component {
         };
     }
     handleChange(date) {
-        message.info('您选择的日期是: ' + date.toString());
+        message.info('您选择的日期是: ' + date.toTimeString());
         this.setState({ date });
     }
     render() {
@@ -50,4 +58,4 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App/>,document.getElementById('demo'));
+ReactDOM.render(<Hello/>,document.getElementById('demo'));

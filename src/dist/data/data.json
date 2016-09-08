@@ -1,0 +1,33 @@
+{
+  "address": {
+    "address": "江干区白杨街道附近---120.346957---30.316040",
+    "addressId": 90,
+    "name": "牟锡松",
+    "phone": "15836248129"
+  },
+  "commission": "0.0",
+  "createTime": "2016-08-31 12:08:27",
+  "disbursements": "1.0",
+  "endDate": "2016-08-31 12:09:33",
+  "goods": {
+    "goodsId": 502,
+    "hourPrice": 1,
+    "mainImg": "http://oawebhlkc.bkt.clouddn.com/20160831120814WLJRCBAXSTYNOIQVPMKFUHGEDZ",
+    "minPrice": "9.0",
+    "name": "电动车",
+    "rent": "1.0￥/h",
+    "store": false
+  },
+  "money": "1.0",
+  "orderId": 152,
+  "owner": true,
+  "safe": false,
+  "startDate": "2016-08-31 12:08:28",
+  "type": 5,
+  "user": {
+    "headImg": "http://oawebhlkc.bkt.clouddn.com/20160904004221JWACULBYHQPFIRZXODSVMGTNEK",
+    "memberRank": 0,
+    "name": "song",
+    "userId": 16
+  }
+}

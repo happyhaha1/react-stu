@@ -108,8 +108,14 @@ var config = {
             loader: 'url?limit=10000&name=dist/fonts/[name].[ext]'
         }, {
             test: /\.json$/,
-            loader: 'json'
+            loader: 'file'
+        },{
+            test: /\.scss$/,
+            loaders: ["style", "css", "sass"]
         }]
+    },
+    sassLoader: {
+        includePaths: [path.resolve(process.cwd(), "src/dist/sass")]
     },
     postcss: function(webpack) {
         return {
