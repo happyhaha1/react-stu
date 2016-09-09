@@ -20,7 +20,11 @@ class Hello extends React.Component {
         //
         // var dir = fs.readdirSync(srcDir);
         // console.log(dir);
-        fetch(Data)
+        fetch('https://api.douban.com/v2/book/1220562',
+            {
+            method: "GET",
+            mode: "cors",
+            })
             .then((res) => { console.log(res.status);return res.json() })
             .then((data) => { console.log(data) })
             .catch((e) => { console.log(e.message) })
