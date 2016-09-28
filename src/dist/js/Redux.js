@@ -12,7 +12,7 @@ const store = configureStore();
 
 render(
     <Provider store={store}>
-        <App />
+        <App counter={10} />
     </Provider>,
     document.getElementById('demo')
 );

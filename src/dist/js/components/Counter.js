@@ -19,7 +19,7 @@ class Counter extends Component {
                 {' '}
                 <button onClick={incrementIfOdd}>Increment if odd</button>
                 {' '}
-                <button onClick={() => incrementAsync()}>Increment async</button>
+                <button onClick={() => incrementAsync(2000)}>Increment async</button>
             </p>
         )
     }
